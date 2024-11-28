@@ -2,7 +2,18 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-    "title": "Unite Project",
-    "details": "Evento para criação de projeto",
-    "maximumAttendees": 100
+    "title": "Limite de participantes",
+    "details": null,
+    "maximumAttendees": 2
+}
+
+
+### 
+
+POST http://localhost:3333/events/2c3f80ee-b2e1-42ea-9c8a-cc727b37e4fd/attendees
+Content-Type: application/json
+
+{
+    "name": "Raphaaa",
+    "email": "raphael33@hotmail.com"
 }
