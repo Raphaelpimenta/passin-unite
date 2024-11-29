@@ -2,23 +2,29 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-    "title": "Limite de participantes",
-    "details": null,
-    "maximumAttendees": 2
+    "title": "O Novo Evento de novo sobre o novo",
+    "details": "Descrição do evento",
+    "maximumAttendees": 10
 }
 
 
 ### 
 
-POST http://localhost:3333/events/2c3f80ee-b2e1-42ea-9c8a-cc727b37e4fd/attendees
+POST http://localhost:3333/events/8f6ccebf-24f2-467a-9cad-f42589c3b521/attendees
 Content-Type: application/json
 
 {
-    "name": "Raphaaa",
-    "email": "raphael33@hotmail.com"
+    "name": "Pimennnta, Raphaelllll",
+    "email": "pimentaaaa@teeeest.com"
 }
 
 
 ###
 
-GET http://localhost:3333/events/2c3f80ee-b2e1-42ea-9c8a-cc727b37e4fd
+GET http://localhost:3333/events/8f6ccebf-24f2-467a-9cad-f42589c3b521
+
+
+###
+
+
+GET http://localhost:3333/attendees/1/badge
