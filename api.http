@@ -2,7 +2,7 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-    "title": "Teste novo",
+    "title": "Teste novooooo",
     "details": "Descrição do evento",
     "maximumAttendees": 2
 }
@@ -10,21 +10,26 @@ Content-Type: application/json
 
 ### 
 
-POST http://localhost:3333/events/1c24a239-0667-4601-b285-f03e71c6c0a4/attendees
+POST http://localhost:3333/events/62bf347d-5bd6-47f7-9a31-9ab887673fba/attendees
 Content-Type: application/json
 
 {
-    "name": "Pimennnta, Raphaelllll",
-    "email": "pimentaaaa@teeeest.com"
+    "name": "Pimennnta, Raphaelllldddddl",
+    "email": "pimentaaaa@tfffeeeest.com"
 }
 
 
 ###
 
-GET http://localhost:3333/events/1c24a239-0667-4601-b285-f03e71c6c0a4
+GET http://localhost:3333/events/62bf347d-5bd6-47f7-9a31-9ab887673fba
 
 
 ###
 
 
-GET http://localhost:3333/attendees/1/badge
+GET http://localhost:3333/attendees/17/badge
+
+
+###
+
+GET http://localhost:3333/attendees/17/check-in

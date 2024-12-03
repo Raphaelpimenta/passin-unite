@@ -1,8 +1,8 @@
 import { FastifyInstance } from "fastify";
 import { ZodTypeProvider } from "fastify-type-provider-zod";
 import { z } from "zod";
-import { prisma } from "../lib/prisma";
 import { BadRequest } from "./_errors/bad-request";
+import { prisma } from "../lib/prisma";
 
 export async function checkIn(app: FastifyInstance) {
     app
@@ -21,9 +21,10 @@ export async function checkIn(app: FastifyInstance) {
         }, async (request, reply) => {
             const { attendeeId } = request.params
 
+
             const attendeeCheckIn = await prisma.checkIn.findUnique({
                 where: {
-                    attendeeId,
+                    attendeeId
                 }
             })
 
