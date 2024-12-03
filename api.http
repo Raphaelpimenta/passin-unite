@@ -33,3 +33,7 @@ GET http://localhost:3333/attendees/17/badge
 ###
 
 GET http://localhost:3333/attendees/17/check-in
+
+
+###
+GET http://localhost:3333/events/62bf347d-5bd6-47f7-9a31-9ab887673fba/attendees?query=Raphael
